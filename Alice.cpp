@@ -18,7 +18,7 @@ int main(){
 	memset(&sockAddr, 0, sizeof(sockAddr)); //每个字节都用0填充
 	sockAddr.sin_family = PF_INET;
 	sockAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-	sockAddr.sin_port = htons(8888);
+	sockAddr.sin_port = htons(4200);
 	connect(sock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
 	//协商g和大素数n 
 	char bufSend[BUF_SIZE] = {0}; 

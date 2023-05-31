@@ -108,7 +108,7 @@ int main() {
     send(bob_sock, temp, sizeof(temp), 0);
     memset(temp, 0, sizeof(temp));
 
-    printf("Fake g^a sent to Bob: %d\n", key_a);
+    printf("Fake g^a sent to Bob: %d\n", v_b);
 
     // Intercept response sent from Bob, pretend to be Alice and send arbitrary
     // message back to Bob
